@@ -28,7 +28,7 @@ console.log(myData);
   <article>
     <img src={myData.image} alt="Speaker Image" />
     <div>
-      <h2>{myData.name}</h2>
+      <h1>{myData.name}</h1>
       <p>{myData.description}</p>
       <br /><br /><br />
       <a href="/speakers">
@@ -41,8 +41,16 @@ console.log(myData);
 </MainLayout>
 
 <style>
+  img {
+    max-width: 70%;
+  }
+  h1 {
+    font-size: var(--xlg-size);
+  }
   p {
     max-width: 50ch;
+    font-size: var(--md-size);
+    line-height: 3ch;
   }
   article {
     display: grid;
@@ -50,26 +58,21 @@ console.log(myData);
     grid-template-columns: 1fr 1fr;
     background-image: url("../card_background.svg");
     background-size: cover;
-    max-width: 900px;
+    max-width: 80%;
     margin: 0 auto;
     margin-bottom: 0;
     margin-top: 3rem;
     padding: 1rem;
     border-radius: 1rem;
   }
-  img {
-    width: 80%;
-  }
   @media (max-width: 800px) {
     article {
       grid-template-columns: 1fr;
-    }
-    img {
-      width: 70%;
     }
   }
 
   .goback {
     margin-bottom: 1.1em;
+    margin-left: 70%;
   }
 </style>

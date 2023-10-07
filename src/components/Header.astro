@@ -20,8 +20,14 @@ import Nav from "./Nav.astro";
     grid-template-columns: 1fr 1fr;
   }
   .logo {
-    width: 15rem;
+    max-width: 80%;
   }
+  @media screen and (min-width: 900px) {
+    .logo {
+      width: 50%;
+    }
+  }
+
   hr {
     border-color: var(--primary-color);
     width: 80%;

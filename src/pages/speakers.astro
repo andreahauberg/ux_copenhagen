@@ -32,11 +32,17 @@ console.log(data);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1600px;
     margin: 0 auto;
+    gap: 1em;
+  }
+  @media screen and (min-width: 2400px) {
+    section {
+      gap: 5em;
+    }
   }
   h1 {
     text-indent: 10%;
     padding-bottom: 0.5rem;
+    font-size: var(--xxlg-size);
   }
 </style>
