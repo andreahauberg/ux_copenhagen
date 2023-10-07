@@ -4,16 +4,18 @@ import HomeButton from "../components/HomeButton.astro";
 ---
 
 <MainLayout title="Home">
-  <div class="home_title">
-    <h1>UX Conference</h1>
-    <h2>20-21 of March 2024</h2>
-  </div>
   <div>
-    <h3>See you there?</h3>
-    <div class="home_grid">
-      <img class="hero" src="../hero.svg" alt="UX Copenhagen" />
-      <div class="buy_tickets">
-        <HomeButton title="Buy Tickets" />
+    <div class="home_title">
+      <h1>UX Conference</h1>
+      <h2>20-21 of March 2024</h2>
+    </div>
+    <div>
+      <h3>See you there?</h3>
+      <div class="home_grid">
+        <img class="hero" src="../hero.svg" alt="UX Copenhagen" />
+        <div class="buy_tickets">
+          <HomeButton title="Buy Tickets" />
+        </div>
       </div>
     </div>
   </div>
@@ -40,7 +42,7 @@ import HomeButton from "../components/HomeButton.astro";
   }
   @media (min-width: 800px) {
     .buy_tickets {
-      margin-top: 6%;
+      margin-top: 20%;
       margin-right: 6%;
     }
   }
@@ -54,10 +56,10 @@ import HomeButton from "../components/HomeButton.astro";
     width: 400px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 800px) {
     .hero {
-      max-width: 30%;
-      margin-top: -10em;
+      max-width: 100%;
+      margin-top: -3em;
     }
   }
 
