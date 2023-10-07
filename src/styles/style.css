@@ -58,29 +58,6 @@
       --xxsm-size: 0.9cqw;
     }
   }
-  /* @media screen and (min-width: 2560px) {
-    :root {
-      --xxlg-size: 3rem;
-      --xlg-size:2.9rem;
-      --lg-size: 2.8rem;
-      --md-size: 2.5rem;
-      --sm-size: 2.2rem;
-      --xsm-size: 1rem;
-      --xxsm-size: 1.8rem;
-    }
-  } */
-  /* @media screen and (min-width: 3840px) {
-    :root {
-      --h1-size: 6rem;
-      --h2-size: 2.5rem;
-      --h3-size: 2rem;
-      --h4-size: 1.75rem;
-      --p-size: 1.5rem;
-      --button-size: 1.2rem;
-    }
-  } */
-  
-  
 
   /* DEFAULT STYLE */
 
