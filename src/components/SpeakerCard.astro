@@ -1,0 +1,30 @@
+---
+const { data } = Astro.props;
+import Button from "../components/Button.astro";
+---
+
+<article>
+  <img src={data.image} alt="Speaker Image" />
+  <h2>{data.name}</h2>
+  <h3>{data.position}</h3>
+  <a href={`speaker/${data.slug}`}>
+    <Button title="Read More" />
+  </a>
+</article>
+
+<style>
+  article {
+    width: 350px;
+    height: 450px;
+    background-image: url("../card_background.svg");
+    background-size: cover;
+    margin-bottom: 4em;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1em;
+  }
+
+  h3 {
+    margin-top: -10px;
+  }
+</style>

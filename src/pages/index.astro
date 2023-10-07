@@ -1,0 +1,92 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import HomeButton from "../components/HomeButton.astro";
+---
+
+<MainLayout title="Home">
+  <div class="home_title">
+    <h1>UX Conference</h1>
+    <h2>20-21 of March 2024</h2>
+  </div>
+  <div>
+    <h3>See you there?</h3>
+    <div class="home_grid">
+      <img class="hero" src="../hero.svg" alt="UX Copenhagen" />
+      <div class="buy_tickets">
+        <HomeButton title="Buy Tickets" />
+      </div>
+    </div>
+  </div>
+</MainLayout>
+
+<style>
+  .home_grid {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
+    margin-right: 5%;
+  }
+  @media (min-width: 800px) {
+    .home_grid {
+      margin-right: 0;
+    }
+  }
+
+  .buy_tickets {
+    order: -1;
+    margin-top: 40%;
+    margin-right: 10%;
+  }
+  @media (min-width: 800px) {
+    .buy_tickets {
+      margin-top: 15%;
+      margin-right: 6%;
+    }
+  }
+  @media (min-width: 1400px) {
+    .buy_tickets {
+      margin-top: 15%;
+      margin-right: 3%;
+    }
+  }
+  .hero {
+    width: 100%;
+    /* max-width: 80%; */
+  }
+
+  @media (min-width: 768px) {
+    .hero {
+      max-width: 50%;
+      margin-top: -10em;
+    }
+  }
+
+  h2 {
+    margin-top: -1.2em;
+    text-indent: 9em;
+    color: var(--primary-text);
+  }
+
+  h3 {
+    position: absolute;
+    text-indent: 3em;
+    margin-top: 0.5em;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+
+  @media (min-width: 768px) {
+    h3 {
+      margin-left: 10%;
+      margin-top: 2%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .home_title {
+      margin-left: 10%;
+    }
+  }
+</style>
