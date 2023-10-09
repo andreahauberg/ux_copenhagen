@@ -2,9 +2,7 @@
 const { title } = Astro.props;
 ---
 
-<a href="/#">
-  <button>{title}</button>
-</a>
+<button>{title}</button>
 
 <style>
   button {
@@ -16,7 +14,7 @@ const { title } = Astro.props;
     padding: 0.5rem;
     margin-left: 75%;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(18, 18, 18, 0.8);
+    box-shadow: 0 4px 8px rgba(18, 18, 18, 0.5);
   }
   button:hover {
     background-color: var(--hover-color);

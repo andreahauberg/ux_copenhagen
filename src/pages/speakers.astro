@@ -23,6 +23,9 @@ const data = await fetch(
       })
     }
   </section>
+  <div id="scroll-to-top">
+    <img src="../arrow.svg" alt="arrow up" />
+  </div>
 </MainLayout>
 
 <style>
@@ -43,4 +46,27 @@ const data = await fetch(
     padding-bottom: 0.5rem;
     font-size: var(--xxlg-size);
   }
+  #scroll-to-top {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    width: 5%;
+  }
+
+  @media (max-width: 768px) {
+    #scroll-to-top {
+      width: 8%;
+    }
+  }
+
+  @media (min-width: 2200px) {
+    #scroll-to-top {
+      width: 4%;
+    }
+  }
 </style>
+
+<script src="../js/scroll.js"></script>

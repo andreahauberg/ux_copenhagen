@@ -14,7 +14,9 @@ import HomeButton from "../components/HomeButton.astro";
       <div class="home_grid">
         <img class="hero" src="../hero.svg" alt="UX Copenhagen" />
         <div class="buy_tickets">
-          <HomeButton title="Buy Tickets" />
+          <a href="/#">
+            <HomeButton title="Buy Tickets" />
+          </a>
         </div>
       </div>
     </div>
@@ -39,6 +41,7 @@ import HomeButton from "../components/HomeButton.astro";
     order: -1;
     margin-top: 50%;
     margin-right: 12%;
+    z-index: 1;
   }
   @media (min-width: 800px) {
     .buy_tickets {
