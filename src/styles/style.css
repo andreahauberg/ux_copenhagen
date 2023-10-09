@@ -20,6 +20,7 @@
     --h4-wheigt:normal;
     --p-wheigt:normal;
     --button-wheigt:normal;
+    --border-radius:0.5rem;
 
   }
   @media screen and (max-width: 768px) {
@@ -56,6 +57,7 @@
       --sm-size: 1.2cqw;
       --xsm-size: 1cqw;
       --xxsm-size: 0.9cqw;
+      --border-radius:0.6rem;
     }
   }
 
@@ -63,7 +65,7 @@
 
   img{
     width: 70%;
-    border-radius: 0.5rem;
+    border-radius: var(--border-radius);
   }
 
   *{

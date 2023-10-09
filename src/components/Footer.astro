@@ -52,6 +52,33 @@
     a:hover img {
       transition: 0.7s ease;
       filter: brightness(1.4);
+      animation-name: pulse;
+      animation-duration: 1.6s;
+      animation-iteration-count: 1;
+      animation-timing-function: linear;
+      animation-fill-mode: both, both;
+    }
+
+    @keyframes pulse {
+      0% {
+        scale: 1;
+      }
+
+      25% {
+        scale: 0.9;
+      }
+
+      50% {
+        scale: 0.8;
+      }
+
+      75% {
+        scale: 0.9;
+      }
+
+      100% {
+        scale: 1;
+      }
     }
 
     h4 {
@@ -62,7 +89,7 @@
     button {
       color: var(--secondary-text);
       background-color: var(--primary-variant-color);
-      border-radius: 0.5rem;
+      border-radius: var(--border-radius);
       border: none;
       padding: 0.5rem;
       font-size: var(--sm-size);
@@ -74,6 +101,33 @@
     button:hover {
       background-color: var(--hover-color);
       transition: 0.7s ease;
+      animation-name: pulse;
+      animation-duration: 1.6s;
+      animation-iteration-count: 1;
+      animation-timing-function: linear;
+      animation-fill-mode: both, both;
+    }
+
+    @keyframes pulse {
+      0% {
+        scale: 1;
+      }
+
+      25% {
+        scale: 0.9;
+      }
+
+      50% {
+        scale: 0.8;
+      }
+
+      75% {
+        scale: 0.9;
+      }
+
+      100% {
+        scale: 1;
+      }
     }
 
     form {
@@ -83,9 +137,10 @@
 
     input {
       padding: 0.5rem;
-      border-radius: 0.5rem;
+      border-radius: var(--border-radius);
       border-color: var(--primary-color);
       border-width: 1px;
+      font-size: var(--sm-size);
     }
 
     hr {
@@ -93,6 +148,7 @@
       width: 80%;
       margin-top: 5em;
       margin-bottom: 2em;
+      border-radius: 10em;
     }
   </style>
 </footer>
